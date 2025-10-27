@@ -7,10 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface HelloCppBridge : NSObject
 
-@end
+- (NSString *)getHelloWorldFromCpp;
 
-NS_ASSUME_NONNULL_END
+@end

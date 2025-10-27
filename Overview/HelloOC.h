@@ -5,8 +5,20 @@
 //  Created by Jinping Shi on 2025/10/27.
 //
 
-#ifndef HelloOC_h
-#define HelloOC_h
+#import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
 
-#endif /* HelloOC_h */
+@interface HelloOC : NSObject
+
+@property (nonatomic, strong, readonly) NSString *message;
+
++ (NSString *)getHelloWorld;
+
+- (instancetype)init;
+- (NSString *)generateHelloWorld;
+- (void)printHelloWorld;
+
+@end
+
+NS_ASSUME_NONNULL_END

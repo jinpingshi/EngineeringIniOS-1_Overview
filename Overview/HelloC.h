@@ -1,13 +1,17 @@
 //
-//  HelloWorld.h
+//  HelloC.h
 //  Overview
 //
 //  Created by Jinping Shi on 2025/10/27.
 //
 
-#ifndef HelloWorld_h
-#define HelloWorld_h
+#ifndef HELLOC_H
+#define HELLOC_H
 
 #include <stdio.h>
+#include <string.h>
 
-#endif /* HelloWorld_h */
+const char* getHelloWorldC(void);
+void printHelloWorldC(void);
+
+#endif /* HELLOC_H */

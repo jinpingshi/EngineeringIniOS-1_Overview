@@ -6,11 +6,14 @@
 //
 
 #import "HelloCppBridge.h"
-
-NS_ASSUME_NONNULL_BEGIN
+#include "HelloCpp.hpp"
 
 @implementation HelloCppBridge
 
-@end
+- (NSString *)getHelloWorldFromCpp {
+    HelloCpp cpp;
+    std::string cppString = cpp.getHelloWorld();
+    return [NSString stringWithUTF8String:cppString.c_str()];
+}
 
-NS_ASSUME_NONNULL_END
+@end

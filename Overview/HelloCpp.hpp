@@ -1,13 +1,26 @@
 //
-//  HelloWorldCpp.hpp
+//  HelloCpp.hpp
 //  Overview
 //
 //  Created by Jinping Shi on 2025/10/27.
 //
 
-#ifndef HelloWorldCpp_hpp
-#define HelloWorldCpp_hpp
+#ifndef HELLOCPP_HPP
+#define HELLOCPP_HPP
 
-#include <stdio.h>
+#include <string>
+#include <iostream>
 
-#endif /* HelloWorldCpp_hpp */
+class HelloCpp {
+private:
+    std::string message;
+    
+public:
+    HelloCpp();
+    ~HelloCpp();
+    
+    std::string getHelloWorld() const;
+    void printHelloWorld() const;
+};
+
+#endif /* HELLOCPP_HPP */
